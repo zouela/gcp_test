@@ -12,3 +12,14 @@ print (val)
 val = next(gener)
 
 print (val)
+
+liste =[1,2,3,4,5]
+
+#map: on applique la fonction à toutes les valeurs de la liste
+#lambda permet de créer une fonction sans nom
+#filter ne ressort que les données qui satisfont la condition
+
+print(list(map(lambda num : num**2, liste)))
+print(list(filter(lambda num : num%2==0, liste)))
+
+
