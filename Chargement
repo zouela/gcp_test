@@ -22,4 +22,16 @@ liste =[1,2,3,4,5]
 print(list(map(lambda num : num**2, liste)))
 print(list(filter(lambda num : num%2==0, liste)))
 
+test = lambda num : num**2
+print(test(5))
 
+class Func_Test:
+    def __init__(self):
+        pass
+    def square(self,number):
+        return number**2
+
+test_class = Func_Test()
+test = lambda x :test_class.square(x)
+
+print(test(10))
